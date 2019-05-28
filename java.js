@@ -233,15 +233,15 @@ function Bai1_GetDateMonthYearSeason()
 {
 	var x = new Date();				// bắt buộc phải là new Date không là ko gọi được các lệnh ngày tháng năm ... đâu
 	y = x.getDate() + "/" + (x.getMonth() + 1) + "/" + x.getFullYear();
-	if (x.getMonth() >= 2 && x.getMonth() <= 4)
+	if ((x.getMonth() + 1) >= 2 && (x.getMonth() + 1) <= 4)
 	{
 			document.write("Mùa xuân " + y);
 	}
-	else if (x.getMonth() >= 5 && x.getMonth() <= 7) 
+	else if ((x.getMonth() + 1) >= 5 && (x.getMonth() + 1) <= 7) 
 	{
 			document.write("Mùa hè " + y);			
 	}
-	else if (x.getMonth() >= 8 && x.getMonth() <= 10) 
+	else if ((x.getMonth() + 1) >= 8 && (x.getMonth() + 1) <= 10) 
 	{
 			document.write("Mùa thu " + y);			
 	}
