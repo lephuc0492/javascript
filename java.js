@@ -232,7 +232,7 @@ function Bai1_GetDateMonthYear()
 function Bai1_GetDateMonthYearSeason()
 {
 	var x = new Date();				// bắt buộc phải là new Date không là ko gọi được các lệnh ngày tháng năm ... đâu
-	y = x.getDate() + "/" + x.getMonth() + "/" + x.getFullYear();
+	y = x.getDate() + "/" + (x.getMonth() + 1) + "/" + x.getFullYear();
 	if (x.getMonth() >= 2 && x.getMonth() <= 4)
 	{
 			document.write("Mùa xuân " + y);
